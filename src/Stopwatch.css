@@ -1,0 +1,53 @@
+.stopwatch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    margin-top: 8vmax;
+    margin-bottom: 3vmax;
+  }
+  
+  .display {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 2vmax;
+  }
+  
+  .controls {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  .controls button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 10%;
+    color: #fff;
+  }
+  
+  .controls button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 600px) {
+    .display {
+      font-size: 36px; /* Smaller font size for mobile */
+    }
+  
+    .controls {
+      flex-direction: column;
+    }
+  
+    .controls button {
+      width: 100%; /* Full width buttons on mobile */
+      font-size: 14px;
+    }
+  }
+  
